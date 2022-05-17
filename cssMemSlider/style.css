@@ -152,10 +152,16 @@ input {
 }
 
 @media (max-width: 768px) {
+  .slider {
+    width: 95vw;
+    padding: 1rem;
+  }
   .footer {
     flex-direction: column-reverse;
   }
   .text {
     width: auto;
+    margin-bottom: 1rem;
+    align-self: flex-start;
   }
 }
