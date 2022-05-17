@@ -18,9 +18,7 @@ html {
 }
 
 body {
-  /* height: 100%; */
   min-height: 100vh;
-  /* background-color: black; */
   background-color: #284d4e;
   display: flex;
   justify-content: center;
@@ -29,18 +27,13 @@ body {
 
 .slider {
   width: 70vw;
-  /* height: 700px; */
   padding: 2rem;
-  /* padding-bottom: 5rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow: hidden; */
-  /* border: 8px solid #eee; */
   border: 8px solid #53acaf;
   border-radius: 8px;
   background-color: black;
-  /* margin: 20px auto; */
 }
 .slides-wrapper {
   overflow: hidden;
@@ -50,7 +43,6 @@ body {
   display: flex;
   width: 400%;
   height: 100%;
-  /* overflow: hidden; */
 }
 
 .slide {
@@ -59,7 +51,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
 }
 .slide img {
   object-fit: fill;
@@ -72,8 +63,6 @@ body {
   display: flex;
   justify-content: end;
   align-items: center;
-  /* margin-top: 2rem;
-  margin-right: 2rem; */
 }
 
 .bar {
@@ -84,18 +73,10 @@ body {
   border-radius: 4px;
   cursor: pointer;
   background-color: #53acaf;
-  /* opacity: 0.5; */
   transition: all 0.5s;
 }
 
-/* .bar:hover {
-  border: 3px solid white;
-  background-color: white;
-} */
-
 .bar:active {
-  /* opacity: 1; */
-  /* transform: scale(1.3); */
   background-color: transparent;
 }
 
@@ -126,12 +107,6 @@ input {
   align-items: center;
 }
 
-.text {
-  color: white;
-  font-family: Arial;
-  font-size: 3rem;
-  margin-left: 2rem;
-}
 #r1:checked ~ .footer .nav label:nth-child(1),
 #r2:checked ~ .footer .nav label:nth-child(2),
 #r3:checked ~ .footer .nav label:nth-child(3),
@@ -149,4 +124,29 @@ input {
 .bar:hover {
   border: 3px solid white;
   background-color: white;
+}
+
+.text {
+  color: white;
+  font-family: Arial;
+  font-size: 3rem;
+  margin-left: 2rem;
+  width: 100rem;
+  height: fit-content;
+  transition: all 2s;
+  display: flex;
+}
+
+.text p:nth-child(1),
+.text p:nth-child(2),
+.text p:nth-child(3),
+.text p:nth-child(4) {
+  display: none;
+}
+
+#r1:checked ~ .footer .text p:nth-child(1),
+#r2:checked ~ .footer .text p:nth-child(2),
+#r3:checked ~ .footer .text p:nth-child(3),
+#r4:checked ~ .footer .text p:nth-child(4) {
+  display: block;
 }
