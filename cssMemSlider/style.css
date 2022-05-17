@@ -150,3 +150,12 @@ input {
 #r4:checked ~ .footer .text p:nth-child(4) {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .text {
+    width: auto;
+  }
+}
